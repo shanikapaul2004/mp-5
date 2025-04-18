@@ -52,7 +52,7 @@ export async function createNewUrl(originalUrl: string, alias: string): Promise<
         if (url.protocol !== 'http:' && url.protocol !== 'https:') {
             throw new Error("Invalid URL protocol");
         }
-    } catch (error) {
+    } catch {
         throw new Error("Invalid URL. Please include http:// or https://");
     }
 

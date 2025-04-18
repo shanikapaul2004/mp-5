@@ -27,7 +27,7 @@ export default function Home() {
                 setError("Invalid URL protocol. Please include http:// or https://");
                 return false;
             }
-        } catch (_) {
+        } catch {
             setError("Please enter a valid URL (including http:// or https://)");
             return false;
         }
